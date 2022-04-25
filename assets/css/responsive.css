@@ -1,0 +1,11 @@
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.25rem !important;
+        padding-left: 1.25rem !important;
+    }
+    .container-padding {
+        margin-left: 10rem !important;
+        margin-right: 10rem !important;
+        border-bottom: solid 1px #EAE5F8;
+    }
+}

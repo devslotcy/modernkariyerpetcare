@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    -moz-osx-font-smoothing: grayscale
+}
+
+*:focus {
+    outline: none
+}
+
+h1,h2,h3,h4,h5,h6,p,span,label {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+dl, ol, ul {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+ol, ul {
+    padding-left: 0 !important;
+}
+
+p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
