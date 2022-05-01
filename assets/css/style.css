@@ -122,6 +122,9 @@ html, body{font-family: 'Nunito', sans-serif !important;}
 .--bottom96 {
     margin-bottom: 16rem;
 }
+.--bottom36 {
+    margin-bottom: 6rem;
+}
 
 .section-title-sm {
     color: #7B59D5;
@@ -141,11 +144,11 @@ html, body{font-family: 'Nunito', sans-serif !important;}
     border: solid 1px #EAE5F8;
     border-radius: 8px;
     padding: 2rem;
-    transition: .35s;
+    transition: .25s;
 }
 .pet_card:hover {
     background: #7B59D3;
-    transition: .35s;
+    transition: .25s;
 }
 
 
@@ -161,22 +164,19 @@ html, body{font-family: 'Nunito', sans-serif !important;}
 .card_title {
     font-weight: 700;
     font-size: 20px;
-    color: #000;
 }
 .card_description {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
-    color: #000;
 }
 .card_price {
     font-size: 16px;
     font-weight: 700;
-    color: #000;
 }
 .card_get {
     text-decoration: none;
-    color: #7B59D3;
+    color: #fcdb47;
     font-weight: 700;
     font-size: 18px;
     transition: all .25s;
@@ -185,6 +185,64 @@ html, body{font-family: 'Nunito', sans-serif !important;}
     width: 14px;
     height: auto;
 }
-.pet_card > p, h6:hover {
-    color: #FEFFFF !important;
+.pet_card:hover > * {
+    color: #fff;
+}
+.rlt{position: relative;}
+.card_pattern{
+    background-image: url(../images/pow.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 168px;
+    right: 1px;
+    bottom: -3px;
+    border-radius: 0 0 8px 0;
+    opacity: .75;
+}
+/*faq accordion*/
+.accordion-button:not(.collapsed) {
+    color: #7B59D3 !important;
+    background-color: transparent !important;
+}
+.accordion-button {
+    padding: 2rem 0 !important;
+    font-weight: 700 !important;
+    color: #0C081E !important;
+}
+.accordion-item {
+    border: none !important;
+    border-bottom: solid 1px #dfdfdf !important;
+}
+.accordion-body {
+    padding: 1rem 0 !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZyBpZD0iR3JvdXBfMSIgZGF0YS1uYW1lPSJHcm91cCAxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTM5IC0yMTk4KSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDEiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcng9IjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNTM5IDIxOTgpIiBmaWxsPSIjN2I1OWQzIi8+CiAgICA8cGF0aCBpZD0iVW5pb25fMSIgZGF0YS1uYW1lPSJVbmlvbiAxIiBkPSJNNS4xOTQsNi4zODZhLjguOCwwLDAsMS0uNjQ4LS4yNThMLjI0MywxLjUxN0EuOTM1LjkzNSwwLDAsMSwuMjQzLjI2YS43OTEuNzkxLDAsMCwxLDEuMTc0LDBMNS4xOTQsNC4zMDgsOC45NzIuMjZhLjc5MS43OTEsMCwwLDEsMS4xNzQsMCwuOTM1LjkzNSwwLDAsMSwwLDEuMjU3bC00LjMsNC42MTFhLjguOCwwLDAsMS0uNTg3LjI2MVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNTM0IDIyMDUpIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K") !important;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZyBpZD0iR3JvdXBfMiIgZGF0YS1uYW1lPSJHcm91cCAyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTEyIC0yMTk4KSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDEiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcng9IjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNDkyIDIyMTgpIHJvdGF0ZSgxODApIiBmaWxsPSIjZjdkNjQ1Ii8+CiAgICA8cGF0aCBpZD0iVW5pb25fMSIgZGF0YS1uYW1lPSJVbmlvbiAxIiBkPSJNNS4xOTQsNi4zODZhLjguOCwwLDAsMS0uNjQ4LS4yNThMLjI0MywxLjUxN0EuOTM1LjkzNSwwLDAsMSwuMjQzLjI2YS43OTEuNzkxLDAsMCwxLDEuMTc0LDBMNS4xOTQsNC4zMDgsOC45NzIuMjZhLjc5MS43OTEsMCwwLDEsMS4xNzQsMCwuOTM1LjkzNSwwLDAsMSwwLDEuMjU3bC00LjMsNC42MTFhLjguOCwwLDAsMS0uNTg3LjI2MVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNDk2LjgwNiAyMjExKSByb3RhdGUoMTgwKSIgZmlsbD0iI2ZmZiIvPgogIDwvZz4KPC9zdmc+Cg==") !important;
+}
+.mx-margin {
+    margin-right: 3.25rem!important;
+}
+
+/*our favorites*/
+.pets_card {
+    width: 32.05%;
+    height: auto;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.gallery-img {
+    height: auto;
+    max-height: 408px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 8px;
 }
