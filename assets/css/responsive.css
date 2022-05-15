@@ -9,3 +9,130 @@
         border-bottom: solid 1px #EAE5F8;
     }
 }
+
+/*Ipad 768px*/
+@media only screen and (max-width: 768px) {
+    .home_title {
+        font-size: 28px;
+    }
+    .sm-box-icon > svg {
+        height: 56px;
+    }
+    .sm-box {
+        min-height: 84px;
+        padding: 44px 0 0 0;
+    }
+    .sm-box-title {
+        font-size: 14px;
+    }
+    .home-bg {
+        height: 90vw;
+    }
+    .--bottom96 {
+        margin-bottom: 12rem;
+    }
+    .col-md-6 > img{
+        display: none;
+    }
+    .pets_card {
+        width: 30.95%;
+    }
+    .price-card {
+        margin-bottom: 1.5rem;
+    }
+    .testionals-card {
+        min-width: 50%;
+    }
+    .animals{
+        display: none;
+    }
+    .content-place1 {
+        width: 100%;
+    }
+    .content-place2 {
+        width: 100%;
+    }
+    .contact-box {
+        margin-bottom: 3.5rem;
+    }
+    .mx-margin {
+        margin-right: 0 !important;
+    }
+    #prices > .container-fluid {
+        padding: 3.5rem 0;
+    }
+    .testionals-content, .testionals-content-title {
+        padding-left: 2.25rem !important;
+    }
+    .basket_btn {
+        max-width: 7rem;
+        width: auto;
+    }
+}
+
+/*Mobile 600px*/
+@media only screen and (max-width: 600px) {
+    .banner_padding {
+        padding: 34px 0;
+    }
+    .home-bg {
+        height: 290vw;
+    }
+    .--bottom96 {
+        margin-bottom: 6rem;
+    }
+    .section-title-lg {
+        font-size: 24px;
+        padding: 0 16px !important;
+    }
+    .pets_card {
+        width: 46%;
+    }
+    .purple {
+        height: 152px;
+    }
+    .h5, h5 {
+        font-size: 16px;
+    }
+    .nav-pills .nav-link {
+        font-size: 4vw;
+    }
+    .testionals-card {
+        min-width: 80%;
+    }
+    .service-img {
+        width: 100%;
+        height: fit-content;
+    }
+    .content-place2 > .d-flex {
+        display: grid !important;
+    }
+    .d-grid.text-center {
+        margin-bottom: 2rem;
+    }
+    .container > .row.mb-5 > * {
+        margin-bottom: 2rem;
+    }
+    .footer-menu {
+        padding: 0 1rem;
+    }
+    .dog > img{
+        display: none;
+    }
+}
+
+/*Mobile iphone 4 / iphone 5 */
+@media only screen and (max-width: 320px) {
+    .home-bg {
+        height: 325vw;
+    }
+    .--bottom96 {
+        margin-bottom: 6rem;
+    }
+    .pets_card {
+        width: 45.5%;
+    }
+    .purple {
+        height: 124px;
+    }
+}
